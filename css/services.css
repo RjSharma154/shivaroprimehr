@@ -1,0 +1,204 @@
+/* ============================================================
+   SERVICES PAGE STYLES — css/services.css
+   ============================================================ */
+
+/* ===================== SERVICES GRID ===================== */
+.services-section {
+  background: var(--white);
+  padding-top: 72px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.service-card {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  border: 1px solid rgba(13,33,55,0.06);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: rgba(200,150,12,0.2);
+}
+
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: var(--gray-dark);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.service-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-bullets li {
+  font-size: 13px;
+  color: var(--gray-dark);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.55;
+}
+
+.service-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 5px; height: 5px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+/* ===================== ENGAGEMENT MODELS ===================== */
+.engagement-section {
+  background: var(--gray-light);
+}
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.eng-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.eng-card.featured {
+  border-color: var(--gold);
+  background: var(--navy);
+}
+
+.eng-card:not(.featured):hover {
+  border-color: var(--navy-mid);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.eng-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.eng-card h3 {
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.eng-card.featured h3 { color: var(--white); }
+
+.eng-card p {
+  font-size: 14px;
+  color: var(--gray-dark);
+  line-height: 1.7;
+}
+
+.eng-card.featured p { color: rgba(255,255,255,0.65); }
+
+/* ===================== WHO WE SERVE ===================== */
+.serve-section {
+  background: var(--white);
+}
+
+.serve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.serve-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.serve-card:hover {
+  border-color: var(--gold);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.serve-icon {
+  width: 42px; height: 42px;
+  background: var(--navy);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.serve-card span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 600px) {
+  .services-grid,
+  .engagement-grid,
+  .serve-grid {
+    grid-template-columns: 1fr;
+  }
+}
