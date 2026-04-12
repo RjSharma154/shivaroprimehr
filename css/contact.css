@@ -4,7 +4,7 @@
 
 /* ===================== CONTACT SECTION ===================== */
 .contact-section {
-  background: var(--cream);
+  background: var(--teal-pale);
 }
 
 .contact-grid {
@@ -16,12 +16,14 @@
 
 /* Info Column */
 .contact-info h2 {
+  font-family: var(--font-display);
   font-size: clamp(26px, 3.5vw, 40px);
-  color: var(--navy);
+  color: var(--teal-dark);
   margin-bottom: 12px;
 }
 
 .contact-info > p {
+  font-family: var(--font-body);
   font-size: 15px;
   color: var(--gray-dark);
   line-height: 1.75;
@@ -43,7 +45,7 @@
 
 .contact-item-icon {
   width: 42px; height: 42px;
-  background: var(--navy);
+  background: var(--teal);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -53,9 +55,10 @@
 }
 
 .contact-item-text strong {
+  font-family: var(--font-body);
   display: block;
   font-size: 11px;
-  color: var(--gold);
+  color: var(--teal);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 3px;
@@ -63,6 +66,7 @@
 }
 
 .contact-item-text span {
+  font-family: var(--font-body);
   font-size: 14px;
   color: var(--gray-dark);
   line-height: 1.55;
@@ -73,7 +77,7 @@
   transition: color 0.2s;
 }
 
-.contact-item-text a:hover { color: var(--gold); }
+.contact-item-text a:hover { color: var(--teal); }
 
 .whatsapp-cta {
   display: inline-flex;
@@ -88,12 +92,13 @@
   border-radius: var(--radius-lg);
   padding: 44px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(13,33,55,0.06);
+  border: 1px solid rgba(0,100,123,0.08);
 }
 
 .form-title {
+  font-family: var(--font-display);
   font-size: 22px;
-  color: var(--navy);
+  color: var(--teal-dark);
   margin-bottom: 28px;
 }
 
@@ -111,9 +116,10 @@
 }
 
 .form-group label {
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--teal-dark);
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
@@ -121,13 +127,13 @@
 .form-group input,
 .form-group select,
 .form-group textarea {
-  border: 1.5px solid rgba(13,33,55,0.12);
+  border: 1.5px solid rgba(0,100,123,0.14);
   border-radius: 8px;
   padding: 12px 14px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   color: var(--text);
-  background: var(--cream);
+  background: var(--teal-pale);
   transition: var(--transition);
   outline: none;
   -webkit-appearance: none;
@@ -137,9 +143,9 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--gold);
+  border-color: var(--teal);
   background: var(--white);
-  box-shadow: 0 0 0 3px rgba(200,150,12,0.1);
+  box-shadow: 0 0 0 3px rgba(0,100,123,0.1);
 }
 
 .form-group textarea {
@@ -149,24 +155,23 @@
 
 .form-submit {
   width: 100%;
-  background: var(--navy);
+  background: var(--teal);
   color: var(--white);
   padding: 15px;
   border-radius: 8px;
+  font-family: var(--font-body);
   font-weight: 700;
   font-size: 15px;
   border: none;
   cursor: pointer;
   transition: var(--transition);
-  font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.3px;
 }
 
 .form-submit:hover {
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--teal-dark);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(200,150,12,0.25);
+  box-shadow: 0 6px 20px rgba(0,100,123,0.25);
 }
 
 /* ===================== RESPONSIVE ===================== */
