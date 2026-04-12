@@ -9,7 +9,7 @@ const NAV_HTML = `
   <div class="nav-inner">
     <a href="index.html" class="logo">
       <div class="logo-icon">
-        <img src="/assests/images/shivaro-logo.jpeg" alt="Shivaro Prime Logo">
+        <img src="assests/images/shivaro-logo.jpeg" alt="Shivaro Prime Logo">
       </div>
       <div class="logo-text">
         <span class="logo-name">Shivaro Prime</span>
@@ -41,7 +41,7 @@ const FOOTER_HTML = `
     <div class="footer-brand">
       <a href="index.html" class="logo">
         <div class="logo-icon">
-          <img src="/assests/images/shivaro-logo.jpeg" alt="Shivaro Prime Logo">
+          <img src="assests/images/shivaro-logo.jpeg" alt="Shivaro Prime Logo">
         </div>
         <div class="logo-text">
           <span class="logo-name">Shivaro Prime</span>
